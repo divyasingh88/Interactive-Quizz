@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cartoon background elements -->
+    <div class="cartoon-element cloud" style="top: 10%; left: 5%; animation: moveCloud 30s linear infinite;"></div>
+    <div class="cartoon-element cloud" style="top: 20%; right: 10%; animation: moveCloud 25s linear infinite reverse;"></div>
+    <div class="cartoon-element cloud" style="bottom: 15%; left: 15%; animation: moveCloud 35s linear infinite;"></div>
+    <div class="cartoon-element star" style="top: 15%; right: 20%;"></div>
+    <div class="cartoon-element star" style="bottom: 25%; left: 10%;"></div>
+    <div class="cartoon-element star" style="top: 40%; left: 80%;"></div>
+      
+    <div class="quiz-container">
+        <div class="quiz-header">
+            <h1>Fun JavaScript Quiz</h1>
+            <div class="progress-container">
+                <div class="progress-bar" id="progress"></div>
+                </div>
+            </div>
+        
+        <div id="quiz-content">
+          <div class="quiz-body">
+            <div id="question" class="question"></div>
+            <ul id="options" class="options"></ul>
+            <div id="feedback" class="feedback"></div>
+          </div>
+          
+          <div class="quiz-footer">
+            <button id="next-btn" class="btn" disabled>Next Question</button>
+          </div>
+        </div>
+        
+        <div id="results" class="results" style="display: none;">
+          <h2>Quiz Completed!</h2>
+          <div id="score" class="score"></div>
+          <div id="score-message" class="score-message"></div>
+          <button id="restart-btn" class="btn">Take Quiz Again</button>
+        </div>
+      </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
